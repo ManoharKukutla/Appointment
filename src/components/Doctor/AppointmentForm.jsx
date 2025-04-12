@@ -38,8 +38,8 @@ export default function AppointmentForm() {
           patient_email: form.email,
           date: form.date,
           time: form.time,
-          accept_link: `${window.location.origin}/accept/${appointmentRef.id}`,
-          reject_link: `${window.location.origin}/reject/${appointmentRef.id}`
+          accept_link: `https://appointment-inky-beta.vercel.app/accept/${appointmentRef.id}`,
+          reject_link: `https://appointment-inky-beta.vercel.app/reject/${appointmentRef.id}`
         },
         "dJspKxdkkmod62sVT"
       );

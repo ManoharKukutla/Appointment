@@ -17,7 +17,7 @@ export default function DoctorList() {
 
   return (
     <div className="doctor-list">
-      <h1>Available Doctors</h1>
+      <h1>Available Doctors List</h1>
       {doctors.map(doctor => (
         <div key={doctor.id} className="doctor-card">
           <h3>{doctor.name}</h3>
