@@ -34,9 +34,14 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<DoctorList />} />
           <Route path="book" element={<AppointmentForm />} />
-          <Route path="status" element={<AppointmentStatus />} />
-          <Route path="accept/:appointmentId" element={<Accept />} />
-          <Route path="reject/:appointmentId" element={<Reject />} />
+          <Route path="accept/:appointment_Id" element={<Accept />} />
+          <Route path="reject/:appointment_Id" element={<Reject />} />
+          <Route path="status/:appointment_Id" element={<AppointmentStatus />} />
+
+          {/* <Route path="status/:appointmentId" element={<AppointmentStatus />} />
+          {/* <Route path="status" element={<AppointmentStatus />} /> */}
+          {/* <Route path="accept/:appointmentId" element={<Accept />} /> */}
+          {/* <Route path="reject/:appointmentId" element={<Reject />} /> */} 
         </Route>
       </Routes>
     </BrowserRouter>

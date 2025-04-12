@@ -44,7 +44,7 @@ export default function AppointmentForm() {
         "dJspKxdkkmod62sVT"
       );
 
-      navigate("/status", { state: { appointmentId: appointmentRef.id } });
+      navigate("/status", { state: { appointment_Id: appointmentRef.id } });
     } catch (error) {
       console.error("Error:", error);
     }
